@@ -1,0 +1,618 @@
+/* ============================================
+==================== RESET ====================
+===============================================
+*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgb(253, 253, 253);
+}
+
+/* ============================================
+=============== NEWS SECTION ================
+===============================================
+*/
+.news {
+  background-color: #401a24;
+  min-height: calc(2rem + 2.3vw);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.news__text {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  color: #d9c091;
+  animation-name: rolling;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rolling {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-580vw);
+  }
+}
+
+/* ============================================
+================ HERO SECTION =================
+===============================================
+*/
+.hero {
+  height: 80vh;
+  width: 100%;
+  background: url("images/apo3.jpg");
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+}
+
+.hero__tittle {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  padding: 2rem 1rem 0;
+  font-size: calc(3.3rem + 2vw);
+  color: #70ff38;
+  text-shadow: #000201 3px 5px;
+}
+
+.hero__image-box {
+  overflow: hidden;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  animation-name: fight;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fight {
+  0% {
+    transform: translateX(0) rotateZ(0deg);
+  }
+  25% {
+    transform: translateX(1vw) rotateZ(2deg);
+  }
+  50% {
+    transform: translateX(0vw) rotateZ(0deg);
+  }
+  75% {
+    transform: translateX(-1vw) rotateZ(-2deg);
+  }
+  100% {
+    transform: translateX(0) rotateZ(0deg);
+  }
+}
+
+/* ============================================
+=============== MIZUKI SECTION ================
+===============================================
+*/
+.mizuki {
+  background-color: #c7b99c;
+}
+
+.mizuki__tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: calc(2rem + 2vw);
+  color: #401a24;
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.mizuki__tittle::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 8%;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background-color: #a66e4e;
+}
+
+.mizuki__inner-box {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mizuki__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  color: #000000;
+  /* background-color: rgba(0, 0, 0, 0.671); */
+}
+
+.mizuki__sub-tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: calc(1.5rem + 2vw);
+  color: #a67051;
+  margin-bottom: 1.5rem;
+}
+
+.mizuki__parag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.mizuki__image-box {
+}
+.mizuki__image {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+/* ============================================
+=============== TURTLE SECTION ================
+===============================================
+*/
+
+.turtle {
+  background-image: url("images/pantano.jpg");
+  background-position: center 10%;
+  position: relative;
+}
+.turtle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 12, 6, 0.842);
+  z-index: 1;
+}
+
+.turtle__tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: calc(2rem + 2vw);
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 2;
+  color: #45c810;
+  color: #fba350;
+  text-shadow: #000201 3px 5px;
+}
+
+.turtle__tittle::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 8%;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background-color: rgb(228, 58, 58);
+  background-color: rgb(221, 104, 8);
+  z-index: 2;
+}
+
+.turtle__inner-box {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.turtle__sub-tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: calc(1.5rem + 2vw);
+  margin-bottom: 1.5rem;
+
+  color: #8aec64;
+  color: #ffc894;
+
+  text-shadow: #000201 3px 5px;
+}
+
+.turtle__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem;
+  color: #fdfdfd;
+  z-index: 2;
+}
+
+.turtle__parag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.turtle__image-box {
+  padding: 0 2rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.turtle__image {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transform: scaleX(-1);
+  z-index: 2;
+}
+
+/* ============================================
+=============== FIGHT SECTION ================
+===============================================
+*/
+.fight {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5rem;
+  background: url("./images/apoca-city-greyscale.jpg");
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fight__tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: calc(2rem + 2vw);
+  color: #401a24;
+  text-align: center;
+  text-shadow: 2px 3px 2px rgb(255, 255, 255);
+  padding: 3rem 1rem 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.fight__tittle::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 8%;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background-color: #ff0000;
+}
+
+.fight__effects-box {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.fight__effect {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0, 0);
+}
+
+.fight__effect--1 {
+  animation-name: zoom-effect;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.fight__effect--2 {
+  animation-name: zoom-effect2;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.fight__effect--3 {
+  animation-name: zoom-effect3;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.fight__effect--4 {
+  animation-name: zoom-effect4;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.fight__effect--5 {
+  animation-name: zoom-effect5;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom-effect {
+  19.9% {
+    transform: translate(-50%, -50%) scale(1, 1) rotate(-10deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(0, 0) rotate(0deg);
+  }
+}
+@keyframes zoom-effect2 {
+  20% {
+    transform: translate(-50%, -50%) scale(0, 0) rotate(0deg);
+  }
+  39.9% {
+    transform: translate(-50%, -50%) scale(1, 1) rotate(35deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+}
+@keyframes zoom-effect3 {
+  40% {
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+  59.9% {
+    transform: translate(-50%, -50%) scale(1, 1);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+}
+@keyframes zoom-effect4 {
+  60% {
+    transform: translate(-50%, -50%) scale(0, 0) rotate(0deg);
+  }
+  79.9% {
+    transform: translate(-50%, -50%) scale(1, 1) rotate(-15deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+}
+@keyframes zoom-effect5 {
+  80% {
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+  99.9% {
+    transform: translate(-50%, -50%) scale(1, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+}
+
+/* ============================================
+=============== WINNER SECTION ================
+===============================================
+*/
+.winner {
+  background-color: #401a24;
+  padding-bottom: 5rem;
+}
+
+.winner__tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: calc(2rem + 2vw);
+  color: #ff3535;
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.winner__tittle::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 8%;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background-color: #886609;
+}
+
+.winner__image-box {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.winner__image {
+  width: 100%;
+}
+
+/* ============================================
+=================== FOOTER ====================
+===============================================
+*/
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.footer__parag {
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 0.8rem;
+}
+
+.footer__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer__link:hover .footer__icon:hover {
+  transform: scale(1.3);
+  color: #caa53d;
+}
+
+/* ============================================
+============== MEDIA QUERY 798PX ==============
+===============================================
+*/
+
+@media screen and (min-width: 798px) {
+  /* WRAPERS */
+  .mizuki__inner-box,
+  .turtle__inner-box {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .mizuki__image-box,
+  .turtle__image-box {
+    width: 50%;
+  }
+
+  .mizuki__text-box,
+  .turtle__text-box {
+    width: 50%;
+  }
+
+  /* NEWS SECTION */
+  .news__text {
+    animation-duration: 18s;
+  }
+
+  @keyframes rolling {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-350vw);
+    }
+  }
+
+  /* TURTLE SECTION */
+  .turtle__image-box {
+    order: 1;
+  }
+
+  /* WINNER SECTION */
+  .winner__image {
+    width: 80%;
+  }
+}
+
+/* ============================================
+============== MEDIA QUERY 1200PX ==============
+===============================================
+*/
+
+@media screen and (min-width: 1200px) {
+  /* BORDERS */
+  .mizuki,
+  .header,
+  .turtle,
+  .fight {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+  }
+
+  /* NEWS SECTION */
+  .news__text {
+    animation-duration: 22s;
+  }
+
+  @keyframes rolling {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-150vw);
+    }
+  }
+
+  /* WRAPERS */
+  .mizuki__inner-box,
+  .turtle__inner-box {
+    width: 80%;
+  }
+  .mizuki__image-box,
+  .turtle__image-box {
+    width: 40%;
+  }
+  .mizuki__text-box,
+  .turtle__text-box {
+    width: 60%;
+  }
+
+  /* TITTLES AND SUB-TITTLES */
+  .mizuki__tittle,
+  .turtle__tittle,
+  .fight__tittle,
+  .winner__tittle {
+    font-size: 4rem;
+  }
+
+  .mizuki__sub-tittle,
+  .turtle__sub-tittle {
+    font-size: 2.5rem;
+  }
+
+  /* WINNER SECTION */
+  .winner__image {
+    width: 60%;
+  }
+}
