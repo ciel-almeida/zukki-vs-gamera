@@ -10,6 +10,8 @@
 
 
 
+
+
 ## 1. Concept and Initial Idea
 
 This is a website made just to have fun and practice a little bit of css animations. The idea came after I first saw the photo of Mizuki Yamashita and the statue of Gamera, I tough it would look really cool if could create something with that.
@@ -20,12 +22,16 @@ The concept is about a battle between the two in a pos apocalyptic world, Initia
 
 
 
+
+
 ## 2. Technologies
 
 The technologies used were basically HTML5 and CSS3 with a lot of animations to give the effects in the hero section and in the fight effects. 
 
 - HTML5
 - CSS3
+
+
 
 
 
@@ -39,6 +45,8 @@ Besides that, the site is **totally responsive** and made with the concept of **
 
 
 
+
+
 ## 4. What I have learned and what could have been done better
 
 This project was awesome to practice what I have been learning, things like animations, github pages that I have never used before, practice BEM, and overall was a great experience making a project like that from start to finish. 
@@ -46,6 +54,8 @@ This project was awesome to practice what I have been learning, things like anim
 Although it's just a simple site, this project gave me a lot of insights and experience for the next ones that are about to come. Some of things are, the use of some design tool like Figma to at least have a general idea before the start, typography and colors are another thing that I need to get better. And I could have done something more elaborated with carrousels or something like that.
 
 In the next projects I'm gonna try bring new things with the use of Javascript and a better design with proper beforehand planning with Figma.
+
+
 
 
 
