@@ -4,9 +4,9 @@
 
 1. Concept and Initial Idea
 2. Technologies
-3. Best Practices
+3. Best practices
 4. What I learned and what could have been improved
-5. Results
+5. Final result
 
 
 
